@@ -1,8 +1,8 @@
 ### Installing StarkNet node
 
-*StarkNet is a decentralized, permissionless ZK-Rollup. It operates as an L2 network over Ethereum. Top funds on board: Paradigm, Sequoia, Three Arrows Capital, Polychain, Alameda Resaerch, Coinbase Ventures, Intel and VITALIK BUTERIN himself.*
+#### *StarkNet is a decentralized, permissionless ZK-Rollup. It operates as an L2 network over Ethereum. Top funds on board: Paradigm, Sequoia, Three Arrows Capital, Polychain, Alameda Resaerch, Coinbase Ventures, Intel and VITALIK BUTERIN himself.*
 
-*The node is not demanding - 2 cores // 2 gig // 100 GB*
+##### *The node is not demanding - 2 cores // 2 gig // 100 GB*
 ```bash
 sudo apt update
 sudo apt full-upgrade -y
@@ -18,7 +18,7 @@ rustup update stable
 apt install git -y
 ```
 
-*Attention! Over time, new versions will appear, so instead of v0.1.7-alpha, you will need to register. You can check the current version **[here](https://github.com/eqlabs/pathfinder/tags)**.*
+##### *Attention! Over time, new versions will appear, so instead of v0.1.7-alpha, you will need to register. You can check the current version **[here](https://github.com/eqlabs/pathfinder/tags)**.*
 
 ```bash
 git clone --branch v0.1.7-alpha https://github.com/eqlabs/pathfinder.git
@@ -33,12 +33,12 @@ PIP_REQUIRE_VIRTUALENV=true pip install -r requirements-dev.txt
 cargo build --release --bin pathfinder
 ```
 
-*Go to [Alchemy.com](https://www.alchemy.com/) and register*
+##### *Go to [Alchemy.com](https://www.alchemy.com/) and register*
 
-*On the server we write the following command, in which xxxxxx is replaced with this very API KEY*
+##### *On the server we write the following command, in which xxxxxx is replaced with this very API KEY*
 
 ```bash
 cargo run --release --bin pathfinder -- --ethereum.url https://eth-mainnet.alchemyapi.io/v2/xxxxxx
 ```
 
-*After complete synchronization, we will only have to occasionally check that the node continues to work. New errors, as well as additional commands that need to be written when developers update the network, can be found in the project’s discord.*
+##### *After complete synchronization, we will only have to occasionally check that the node continues to work. New errors, as well as additional commands that need to be written when developers update the network, can be found in the project’s discord.*
